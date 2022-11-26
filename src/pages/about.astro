@@ -1,5 +1,12 @@
 ---
+const identity = {
+    fullName: "Maqsood Ahmad Tali ",
+    country: "India",
+    ocupation: "Student",
+    hobby: ['playing cricket', 'playing volleyball','watching cricket'],
+};
 
+const skills = ['HTML','CSS', 'JAVASCRIPT','DENO','NODE'];
 ---
 <html lang="en">
 <head>
@@ -14,7 +21,16 @@
     <a href="/about">About</a>
     <a href="/blog">Blog</a>
     <h1>This is the about page </h1>
-    <h2>Let you Know ore about me i am maqsood developing the itro site <br>
-    by following the blog of the astro official website </h2>
+    <h2>Let you Know More about me  </h2>
+    <ul>
+        <li>My name is {identity.fullName}</li>
+        <li>I live in {identity.country}</li>
+        <li>I am {identity.ocupation}</li>
+        <li>Two of my hobbies are {identity.hobby[0]} and {identity.hobby[2]}</li>
+    </ul>
+    <p>My skills are:</p>
+    <ul>
+        {skills.map((skill) =><li>{skill}</li>)}
+    </ul>
 </body>
 </html>
