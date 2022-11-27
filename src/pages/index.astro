@@ -1,6 +1,7 @@
 ---
 const pageTitle = "Astro Intro"
 import '../styles/global.css'
+import Navigation from'../components/Navigation.astro';
 ---
 
 <html lang="en">
@@ -12,9 +13,10 @@ import '../styles/global.css'
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
+		<!-- <a href="/">Home</a>
 		<a href="/about">About</a>
-		<a href="/blog">Blog</a>
+		<a href="/blog">Blog</a> -->
+		<Navigation/>
 		<h1>{pageTitle}</h1>
 		<h2>I have build the website with astro </h2>
 		<!-- <h3>about section added add the /about to the end of the current url</h3> -->
