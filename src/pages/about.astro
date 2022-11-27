@@ -10,6 +10,10 @@ const skills = ['HTML','CSS', 'JAVASCRIPT','DENO','NODE'];
 const happy = true;
 const finished = false;
 const goal =3;
+const skillColour = "navy";
+const fontSize ="3rem";
+const fontWeight = "bold";
+const textCase = "uppercase";
 ---
 <html lang="en">
 <head>
@@ -18,15 +22,16 @@ const goal =3;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>About</title>
-    <style>
+    <style define:vars={{skillColour, fontSize, textCase, fontWeight}}>
         h1{
             color: purple;
             font-size: 4rem;
         }
         .skill{
-            color: yellow;
-            font-size: 3rem;
-            font-weight: bold;
+            color: var(--skillColour);
+            font-size: var(--fontSize);
+            font-weight: var(--fontWeight);
+            text-transform: var(--textCase);
         }
 
     </style>
