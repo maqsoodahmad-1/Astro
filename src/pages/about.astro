@@ -23,6 +23,11 @@ const goal =3;
             color: purple;
             font-size: 4rem;
         }
+        .skill{
+            color: yellow;
+            font-size: 3rem;
+            font-weight: bold;
+        }
 
     </style>
 </head>
@@ -40,7 +45,7 @@ const goal =3;
     </ul>
     <p>My skills are:</p>
     <ul>
-        {skills.map((skill) =><li>{skill}</li>)}
+        {skills.map((skill) =><li class="skill">{skill}</li>)}
     </ul>
     {happy && <p>I am happy to learning this framework</p>}
     {finished && <p>I finished this tutorial</p>}
