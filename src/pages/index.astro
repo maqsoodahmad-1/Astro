@@ -25,9 +25,7 @@ import Footer from '../components/Footer.astro'
 		<!-- <h3>about section added add the /about to the end of the current url</h3> -->
 		<Footer/>
 		<script>
-			document.querySelector('.hamburger').addEventListener('click',() => {
-				document.querySelector('.nav-links').classList.toggle('expanded');
-			});
+			import "../scripts/menu.js"
 		</script>
 	</body>
 </html>
