@@ -1,8 +1,6 @@
 ---
-import '../styles/global.css'
-// import Navigation from'../components/Navigation.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = 'About Page'
 const identity = {
     fullName: "Maqsood Ahmad Tali ",
     country: "India",
@@ -19,13 +17,7 @@ const fontSize ="3rem";
 const fontWeight = "bold";
 const textCase = "uppercase";
 ---
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>About</title>
+
     <style define:vars={{skillColour, fontSize, textCase, fontWeight}}>
         h1{
             color: purple;
@@ -39,28 +31,20 @@ const textCase = "uppercase";
         }
 
     </style>
-</head>
-<body>
-<!-- <Navigation/> -->
-<Header/>
-    <h1>This is the about page </h1>
-    <h2>Let you Know More about me  </h2>
-    <ul>
-        <li>My name is {identity.fullName}</li>
-        <li>I live in {identity.country}</li>
-        <li>I am {identity.ocupation}</li>
-        <li>Two of my hobbies are {identity.hobby[0]} and {identity.hobby[2]}</li>
-    </ul>
-    <p>My skills are:</p>
-    <ul>
-        {skills.map((skill) =><li class="skill">{skill}</li>)}
-    </ul>
-    {happy && <p>I am happy to learning this framework</p>}
-    {finished && <p>I finished this tutorial</p>}
-    {goal===3? <p>My goal is to finish in 3 days </p>:<p>My goal is not to finish in three days </p>}
-    <Footer/>
-    <script>
-        import "../scripts/menu.js"
-    </script>
-</body>
-</html>
+    <BaseLayout pageTitle = {pageTitle}>
+        <h2>Let you Know More about me  </h2>
+        <ul>
+            <li>My name is {identity.fullName}</li>
+            <li>I live in {identity.country}</li>
+            <li>I am {identity.ocupation}</li>
+            <li>Two of my hobbies are {identity.hobby[0]} and {identity.hobby[2]}</li>
+        </ul>
+        <p>My skills are:</p>
+        <ul>
+            {skills.map((skill) =><li class="skill">{skill}</li>)}
+        </ul>
+        {happy && <p>I am happy to learning this framework</p>}
+        {finished && <p>I finished this tutorial</p>}
+        {goal===3? <p>My goal is to finish in 3 days </p>:<p>My goal is not to finish in three days </p>}
+    </BaseLayout>
+        
