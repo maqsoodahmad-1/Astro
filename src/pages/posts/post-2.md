@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/MarkdownPostLayouts.astro";
+layouts: "../../layouts/MarkdownPostLayouts.astro";
 title: 'My Second Blog'
 description: 'This is the second post of astro site that i have created following the blog'
 author: 'Maqsood ahmad Tali'
