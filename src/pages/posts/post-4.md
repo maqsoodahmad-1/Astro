@@ -1,5 +1,5 @@
 ---
-layouts: "../../layouts/MarkdoenPostLayouts.astro";
+layout: "../../layouts/MarkdoenPostLayouts.astro";
 title: 'My Fourth Blog'
 publishDate: 20/06/2022
 description: 'This is the Fourth post of astro site that i have created following the blog'
