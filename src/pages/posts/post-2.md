@@ -1,6 +1,7 @@
 ---
 layouts: "../../layouts/MarkdownPostLayouts.astro";
 title: 'My Second Blog'
+publishDate: 25/11/2022
 description: 'This is the second post of astro site that i have created following the blog'
 author: 'Maqsood ahmad Tali'
 image: 
