@@ -1,14 +1,14 @@
----
-layout: "../../layouts/MarkdownPostLayouts.astro";
-title: 'First Blog Post'
-publishDate: 26-11-2022
-description: 'This is the first post of astro site that i have created following the blog'
-author: 'Maqsood ahmad Tali'
+<!-- ---
+layout: "../../layouts/MarkdownPostLayouts.astro"
+title: 'First Blog Post';
+publishDate: 26-11-2022;
+description: 'This is the first post of astro site that i have created following the blog';
+author: 'Maqsood ahmad Tali';
 image: 
     url: 'https://lh5.googleusercontent.com/p/AF1QipNZOv5C06B0vk5lGLsh6d7MoS0DFDawCo7287f7=w141-h118-n-k-no-nu'
     alt: 'Mitrc main building image '
 tags: ["Blog on Astro", "Bloging ","Astro"]
----
+--- -->
 # My First Blog Post
 
 Published on: 2022-07-01

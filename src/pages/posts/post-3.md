@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: "../../layouts/MarkdoenPostLayouts.astro";
 title: 'My Third Blog'
 publishDate: 20/10/2022
@@ -8,5 +8,5 @@ image:
     url: 'https://lh5.googleusercontent.com/p/AF1QipNZOv5C06B0vk5lGLsh6d7MoS0DFDawCo7287f7=w141-h118-n-k-no-nu'
     alt: 'Mitrc main building image '
 tags: ["Blog on Astro", "Bloging ","Astro"]
----
+--- -->
 This is the third post that i have created by continuing learning astro 
